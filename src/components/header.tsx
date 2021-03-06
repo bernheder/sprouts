@@ -28,7 +28,7 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => (
         margin: `0 auto`,
         maxWidth: 960,
         paddingTop: "0.5rem",
-        paddingLeft: "5rem"
+        paddingLeft: "5rem auto"
       }}
     >
       <nav>

@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import "./layout.css"
 interface LayoutProps {
@@ -30,8 +29,8 @@ const Layout = ({ children }: LayoutProps) => {
           padding: `0 1.45rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-        <footer
+        <main style={{marginLeft: '5rem auto' }}>{children}</main>
+        <footer 
           style={{
             marginTop: `2rem`,
           }}

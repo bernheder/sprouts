@@ -50,16 +50,6 @@ progress {
 template {
   display: none;
 }
-a {
-  color: white;
-  text-decoration: none;
-}
-a:active {
-  color: greenyellow
-}
-a:hover {
-  color: greenyellow
-}
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
