@@ -1,29 +1,34 @@
 import * as React from "react"
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 interface ProductPreviewProps {
-  imageSource: string | null | undefined
+  imageFluid: any
   excerpt: string | null | undefined
   productName: string | null | undefined
 }
 
-const ProductPreview = ({
-  imageSource,
+export default function ProductPreview({
+  imageFluid,
   excerpt,
   productName,
-}: ProductPreviewProps) => (
-  <div
-    style={{
-      display: "flex",
-    }}
-  >
-    <div>
-      <p>{imageSource}</p>
-    </div>
-    <div>
-      <p>{excerpt}</p>
-      <p>{productName}</p>
-    </div>
-  </div>
-)
-
-export default ProductPreview
+}: ProductPreviewProps) {
+  const image = getImage(imageFluid)
+  if (image && productName) {
+    return (
+      <div
+        style={{
+          marginTop: "3rem",
+          display: "flex",
+        }}
+      >
+        <div>
+          <GatsbyImage image={image} alt={productName} />
+        </div>
+        <div style={{ marginLeft: "3rem" }}>
+          <h2>{productName}</h2>
+          <p>{excerpt}</p>
+        </div>
+      </div>
+    )
+  }
+  return null
+}

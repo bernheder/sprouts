@@ -20,7 +20,11 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => (
   <header
     style={{
       background: `rebeccapurple`,
-      height: '100%'
+      height: '100%',
+      position: "sticky",
+      zIndex:10,
+      top: 0,
+
     }}
   >
     <div

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import {ProductsQuery} from "../../gatsby-graphql"
+import { ProductsQuery } from "../../gatsby-graphql"
 import SEO from "../components/seo"
 import ProductPreview from "../components/product-preview"
 
@@ -29,7 +29,7 @@ export default function IndexPage({ data }: Props) {
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <ProductPreview
           productName={node?.frontmatter?.productName}
-          imageSource={node?.frontmatter?.imageSource?.absolutePath}
+          imageFluid={node?.frontmatter?.imageSource}
           excerpt={node?.excerpt}
         />
       ))}
@@ -49,7 +49,13 @@ export const productsQuery = graphql`
           frontmatter {
             productName
             imageSource {
-              absolutePath
+              childImageSharp {
+                gatsbyImageData(
+          width: 200
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+              }
             }
           }
           excerpt
