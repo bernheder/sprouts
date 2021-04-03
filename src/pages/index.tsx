@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import { ProductsQuery } from "../../gatsby-graphql"
 import SEO from "../components/seo"
 import ProductPreview from "../components/product-preview"
+import Home from "../components/home"
 
 interface Props {
   data: ProductsQuery
@@ -13,24 +14,17 @@ interface Props {
 
 export default function IndexPage({ data }: Props) {
   return (
+    <div style={{          backgroundColor: "ghostwhite"
+  }}>
     <Layout>
       <SEO title="Home" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        width={300}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="A Gatsby astronaut"
-        style={{ marginBottom: `1.45rem` }}
-      />
+      <Home/>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <ProductPreview
           productName={node?.frontmatter?.productName}
           imageFluid={node?.frontmatter?.imageSource}
           excerpt={node?.excerpt}
+          slug={node?.fields?.slug}
         />
       ))}
 
@@ -39,6 +33,7 @@ export default function IndexPage({ data }: Props) {
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </p>
     </Layout>
+    </div>
   )
 }
 export const productsQuery = graphql`
@@ -46,6 +41,9 @@ export const productsQuery = graphql`
     allMarkdownRemark {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             productName
             imageSource {
@@ -53,7 +51,7 @@ export const productsQuery = graphql`
                 gatsbyImageData(
           width: 200
           placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF]
+          formats: [AUTO, WEBP, AVIF, PNG]
         )
               }
             }

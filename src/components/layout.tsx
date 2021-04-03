@@ -22,14 +22,8 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />      <div
-        style={{
-          margin: `3rem auto`,
-          maxWidth: 960,
-          padding: `0 1.45rem 1.45rem`,
-        }}
-      >
-        <main style={{marginLeft: '5rem auto' }}>{children}</main>
+      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />      
+        <main>{children}</main>
         <footer 
           style={{
             marginTop: `2rem`,
@@ -39,7 +33,6 @@ const Layout = ({ children }: LayoutProps) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
-      </div>
     </>
   )
 }

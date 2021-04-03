@@ -1,6 +1,6 @@
 ---
-productName: "Sweet Pandas Eating Sweets"
-imageSource: "../../images/gatsby-icon.png"
+productName: "Brokkomun"
+imageSource: "../../images/gatsby-astronaut.png"
 ---
 Pandas are really sweet.
 Here's a video of a panda eating sweets.

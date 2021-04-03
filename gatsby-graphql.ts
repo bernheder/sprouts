@@ -3494,6 +3494,11 @@ export type StaticImageSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>;
 };
 
+export type DropDownLinksQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type DropDownLinksQuery = { products: { edges: Array<{ node: { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'productName'>> } }> }, articles: { edges: Array<{ node: { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'productName'>> } }> } };
+
 export type SiteTitleQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3512,7 +3517,7 @@ export type ProductsQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type ProductsQuery = { allMarkdownRemark: { edges: Array<{ node: (
         Pick<MarkdownRemark, 'excerpt'>
-        & { frontmatter?: Maybe<(
+        & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<(
           Pick<MarkdownRemarkFrontmatter, 'productName'>
           & { imageSource?: Maybe<{ childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
         )> }

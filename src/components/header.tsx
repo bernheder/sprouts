@@ -1,69 +1,101 @@
 import * as React from "react"
 import { Link as HeaderLink } from "gatsby"
 import styled from "@emotion/styled"
-
+import { useStaticQuery, graphql } from "gatsby"
+import DropDownButton from "./dropDown"
 
 const StyledHeaderLink = styled(HeaderLink)`
-color: white;
-text-decoration: none;
-&:hover {
-  color: blue
-}
-`;
+  color: white;
+  text-decoration: none;
+`
 
 interface HeaderProps {
   siteTitle: string
   menuLinks: { name: string; link: string }[]
 }
 
-const Header = ({ siteTitle, menuLinks }: HeaderProps) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      height: '100%',
-      position: "sticky",
-      zIndex:10,
-      top: 0,
-
-    }}
-  >
-    <div
+const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
+  const data = useStaticQuery(graphql`
+    query DropDownLinks {
+      products: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/products/" } } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              productName
+            }
+          }
+        }
+      }
+      articles: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/products/" } } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              productName
+            }
+          }
+        }
+      }
+    }
+  `)
+  const products = data.products.edges
+  const articles = data.products.articles
+  console.log(products)
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        paddingTop: "0.5rem",
-        paddingLeft: "5rem auto"
+        background: `rebeccapurple`,
+        height: "100%",
+        position: "sticky",
+        zIndex: 10,
+        top: 0,
       }}
     >
-      <nav>
-        <ul style={{ display: "flex", flex: 1 }}>
-          <span style={{paddingRight: "4rem"}}>
-            <StyledHeaderLink
-            className="a"
-              to="/"
-            >
-              {siteTitle}
-            </StyledHeaderLink>
-          </span>
-          {menuLinks.map(link => (
-            <li
-              key={link.name}
-              style={{
-                listStyleType: `none`,
-                paddingLeft: "1rem",
-              }}
-            >
-              <StyledHeaderLink
-                to={link.link}
-              >
-                {link.name.toUpperCase()}
-              </StyledHeaderLink>
+      <div
+      >
+        <nav style={{        justifyContent: "center",
+        margin: "auto",
+
+        maxWidth: "1200px"}}>
+          <ul style={{display: "flex", flex: 1 }}>
+            <li style={{ width: "100%",paddingRight: "3rem",paddingTop: "0.5rem" }}>
+              <StyledHeaderLink to="/">{siteTitle}</StyledHeaderLink>
             </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
-  </header>
-)
+            {menuLinks.map(link => (
+              <li
+                key={link.name}
+                style={{
+                  
+                  listStyleType: `none`,
+                  paddingLeft: "1rem",
+                  paddingTop: "0.5rem"
+                }}
+              >
+                <StyledHeaderLink to={link.link}>
+                  {link.name.toUpperCase()}
+                </StyledHeaderLink>
+              </li>
+            ))}
+            <li                 style={{
+                  
+                  paddingRight: "2rem",
+                }}>
+            <DropDownButton buttonTitle={"Produkte"} menuLinks={products}/>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  )
+}
 
 export default Header

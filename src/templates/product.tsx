@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import {FullProductQuery} from "../../gatsby-graphql"
+import { FullProductQuery } from "../../gatsby-graphql"
 
 interface Product {
   data: FullProductQuery
@@ -12,8 +12,26 @@ export default function BlogPost({ data }: Product) {
   const html = product?.html || ""
   return (
     <Layout>
-      <div>
-        <h1>{product?.frontmatter?.productName}</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        
+        <h1 style={{display: "block"}}>{product?.frontmatter?.productName}</h1>
+        </div>
+        <div
+        style={{
+          display: "flex",
+          backgroundColor: "white",
+          flex:"1",
+          justifyContent: "center",
+          padding: "2rem",
+          margin: "auto",
+          maxWidth: "800px"
+        }}
+      >
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
