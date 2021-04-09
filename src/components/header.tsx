@@ -7,6 +7,10 @@ import DropDownButton from "./dropDown"
 const StyledHeaderLink = styled(HeaderLink)`
   color: white;
   text-decoration: none;
+
+&:hover {
+  color: cadetblue
+}
 `
 
 interface HeaderProps {
@@ -53,7 +57,7 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
   return (
     <header
       style={{
-        background: `rebeccapurple`,
+        background: `darkseagreen`,
         height: "100%",
         position: "sticky",
         zIndex: 10,
@@ -86,7 +90,7 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
               </li>
             ))}
             <li                 style={{
-                  
+                  paddingLeft: "1rem",
                   paddingRight: "2rem",
                 }}>
             <DropDownButton buttonTitle={"Produkte"} menuLinks={products}/>

@@ -3,13 +3,13 @@ productName: "BROKKO FORCE"
 imageSource: "../../images/gatsby-astronaut.png"
 ---
 
-Ein außergewöhnliches Gesundheitsprodukt.
+## Ein außergewöhnliches Gesundheitsprodukt.
 
-
+<div style="text-align: justify">
 Brokkoli ist der Spitzenreiter, der Star unter den Kohlgemüsen. Aufgrund seines besonders hohen Wirkstoffgehalts, wurden hier auch die meisten Studien gemacht.
 Brokko Force ist eine ideale Keimlingsmischung mit Brokkoli und Daikonrettich, die das Riesenpotenzial der Kohlgemüse auf den Punkt bringt.
 Es wird nicht pulverisiert und nicht verkapselt, sondern wird teelöffelweise eingenommen.
- Im Vergleich zu Extrakten. wo einzelne Wirkstoffe isoliert werden, bleibt die Synergie der ganzen Pflanze erhalten.
+Im Vergleich zu Extrakten. wo einzelne Wirkstoffe isoliert werden, bleibt die Synergie der ganzen Pflanze erhalten.
 
 Hier spielen nicht einzelne Instrumente, sondern das ganze Orchester.
 
@@ -19,7 +19,7 @@ Wir fügen 10% Daikonrettich Keimlinge hinzu,  ein hochpotenter Enzym- spender (
 Der gängige Herstellungsprozess von Brokkoli Produkten kann dazu führen, dass das Enzym Myrosinase, das zwar auch im Brokkoli enthalten ist, teilweise oder ganz deaktiviert wird. Besonders bei Brokkoli Produkten kommt es nicht nur darauf an, was drin ist, sondern was im Körper, in der Zelle, ankommt. Das kann durch die Metaboliten im Urin gemessen werden.
 
 Zusätzlich deaktivieren wir einen Gegenspieler, einen **Enzym Kofaktor**
- ( Epithiospecifier Protein), der die Umwandlung in Sulphoraphan behindert und  unerwünschte Stoffe (Sulphoraphan-Nitril und Epithio-Nitril)  produziert, die die Schilddrüse belasten. Wird dieser Kofaktor nicht deaktiviert, wird schlimmstenfalls gar kein oder nur relativ wenig Sulphoraphan gebildet, weil die Vorstufe –das Glucoraphanin – schon anderweitig von der Konkurrenz umgewandelt wurde. Wir haben dann vielleicht ein Produkt mit tatsächlich hohem sulphoraphanbildendem Ausgangsstoff (Glucoraphanin), es wird aber kein Sulphoraphan oder nur sehr wenig davon gebildet. Übrig bleibt ein wirkungsloses Produkt mit möglicherweise schädlicher Wirkung.
+( Epithiospecifier Protein), der die Umwandlung in Sulphoraphan behindert und  unerwünschte Stoffe (Sulphoraphan-Nitril und Epithio-Nitril)  produziert, die die Schilddrüse belasten. Wird dieser Kofaktor nicht deaktiviert, wird schlimmstenfalls gar kein oder nur relativ wenig Sulphoraphan gebildet, weil die Vorstufe –das Glucoraphanin – schon anderweitig von der Konkurrenz umgewandelt wurde. Wir haben dann vielleicht ein Produkt mit tatsächlich hohem sulphoraphanbildendem Ausgangsstoff (Glucoraphanin), es wird aber kein Sulphoraphan oder nur sehr wenig davon gebildet. Übrig bleibt ein wirkungsloses Produkt mit möglicherweise schädlicher Wirkung.
 
 Unsere  naturnahen, speziellen Produktionsmethoden hingegen, führen  zu einem hochwirksamen Produkt.
 
@@ -38,8 +38,7 @@ Füllmenge….Inhalt  100g
 Verzehrempfehlung:  
 1 mal täglich 1 Teelöffel (ca. 3 g) gut zerkauen  und mit etwas Wasser einnehmen.
 
-
-
+</div>
 
 | **Nährwertangaben:  / 100g** |             |
 | :--------------------------- | :---------: |

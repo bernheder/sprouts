@@ -3,6 +3,9 @@ import styled from "@emotion/styled"
 
 import React, { useState } from 'react';
 const StyledDropDownItem = styled(Dropdown.Item)`
+&:hover {
+  color: cadetBlue
+}
 `
 
 interface DropDownProps {

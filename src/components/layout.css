@@ -247,7 +247,7 @@ hgroup {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: darkseagreen;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -309,7 +309,7 @@ button {
   padding: .5rem 0;
   margin: .125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color:darkseagreen;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -325,7 +325,7 @@ button {
   padding: .25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: black;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -347,8 +347,7 @@ a:-webkit-any-link {
 
 .btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
   color: #fff;
-  background-color:rebeccapurple;
-  border-color: rebeccapurple;
+  background-color:darkseagreen;
 }
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
@@ -361,7 +360,7 @@ a:-webkit-any-link {
 }
 .btn-success {
   color: #fff;
-  background-color:rebeccapurple;
+  background-color:darkseagreen;
 
 }
 [type=button], [type=reset], [type=submit], button {
@@ -390,16 +389,14 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 .btn-success.focus, .btn-success:focus {
-  box-shadow: 0 0 0 0.2rem rebeccapurple;
+  box-shadow: 0 0 0 0.2rem darkseagreen;
 }
 .btn-success.focus, .btn-success:focus, .btn-success:hover {
-  color: rgb(14, 104, 29);
-  background-color:rebeccapurple;
-  border-color:rebeccapurple;
+  color: cadetBlue;
+  background-color:darkseagreen;
 }
 .btn.focus, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer;

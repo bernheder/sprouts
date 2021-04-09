@@ -10,6 +10,7 @@ interface Product {
 export default function BlogPost({ data }: Product) {
   const product = data.markdownRemark
   const html = product?.html || ""
+  
   return (
     <Layout>
       <div
