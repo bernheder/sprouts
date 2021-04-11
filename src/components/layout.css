@@ -346,7 +346,7 @@ a:-webkit-any-link {
 }
 
 .btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
-  color: #fff;
+  color: cadetblue;
   background-color:darkseagreen;
 }
 .btn:not(:disabled):not(.disabled) {
@@ -392,8 +392,12 @@ button:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.2rem darkseagreen;
 }
 .btn-success.focus, .btn-success:focus, .btn-success:hover {
-  color: cadetBlue;
   background-color:darkseagreen;
+}
+
+.btn.hover, .btn:hover {
+  outline: 0;
+  color: cadetblue
 }
 .btn.focus, .btn:focus {
   outline: 0;
@@ -405,6 +409,7 @@ button:focus:not(:focus-visible) {
   white-space: nowrap;
 }
 .dropdown:hover .dropdown-menu {
+
   display: block;
   margin-top: 0; 
 }

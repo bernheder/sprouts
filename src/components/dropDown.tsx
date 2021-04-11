@@ -15,8 +15,16 @@ interface DropDownProps {
   }[]
 }
 const DropDownButton = ({ buttonTitle, menuLinks }: DropDownProps) => {
+  const [show, setShow] = useState(false);
+const showDropdown = ()=>{
+    setShow(!show);
+}
+const hideDropdown = () => {
+    setShow(false);
+}
   return (
-    <Dropdown    >
+    <Dropdown  show={show}     onMouseEnter={showDropdown} 
+    onMouseLeave={hideDropdown}>
       <Dropdown.Toggle 
 
      variant="success" id="dropdown-basic">
