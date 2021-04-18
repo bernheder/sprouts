@@ -29,7 +29,7 @@ export default function IndexPage({ data }: Props) {
       ))}
 
       <p>
-        <Link to="/page-2/">Go to page 2</Link> <br />
+        <Link to="/abut-us/">about-us</Link> <br />
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </p>
     </Layout>
@@ -38,7 +38,7 @@ export default function IndexPage({ data }: Props) {
 }
 export const productsQuery = graphql`
   query Products {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { fields: { slug: { regex: "/products/" } } }) {
       edges {
         node {
           fields {
