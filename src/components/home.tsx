@@ -10,11 +10,13 @@ export default function Home() {
         backgroundColor: "white",
         flex: "1",
         margin: "auto",
+        marginTop: "-2rem",
         padding: "3rem",
         justifyContent: "center",
       }}
     >
-
+      
+      
         <div style={{
           width:700
         }}>

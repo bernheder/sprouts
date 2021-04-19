@@ -2,6 +2,7 @@ import React, { ReactNode } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
+import Footer from "./footer"
 interface LayoutProps {
   children: ReactNode
 }
@@ -15,25 +16,25 @@ const Layout = ({ children }: LayoutProps) => {
             name
             link
           }
+          footerLinks {
+            name
+            link
+          }
         }
       }
     }
   `)
 
   return (
-    <>
+<div style={{
+}}>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />      
-        <main>{children}</main>
-        <footer 
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-    </>
+        <main    
+        >{children}</main>
+      <div>
+        <Footer menuLinks={data.site.siteMetadata.footerLinks}/>
+      </div>
+    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import { Link as HeaderLink } from "gatsby"
 import styled from "@emotion/styled"
 import { useStaticQuery, graphql } from "gatsby"
 import DropDownButton from "./dropDown"
-
+import { StaticImage } from "gatsby-plugin-image"
 const StyledHeaderLink = styled(HeaderLink)`
   color: white;
   text-decoration: none;
@@ -72,24 +72,30 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
         maxWidth: "1200px"}}>
           <ul style={{display: "flex", flex: 1 }}>
             <li style={{ width: "100%",paddingRight: "3rem",paddingTop: "0.5rem" }}>
-              <StyledHeaderLink to="/">{siteTitle}</StyledHeaderLink>
+              <StyledHeaderLink to="/">
+              <div>
+          <StaticImage src={"../images/logo.png"} width={80} alt={"home"} />
+        </div>
+        {siteTitle}
+              </StyledHeaderLink>
             </li>
             {menuLinks.map(link => (
               <li
                 key={link.name}
                 style={{
-                  
+                  whiteSpace: 'nowrap',
                   listStyleType: `none`,
                   paddingLeft: "1rem",
-                  paddingTop: "0.5rem"
+                  paddingTop: "1.5rem"
                 }}
               >
                 <StyledHeaderLink to={link.link}>
-                  {link.name.toUpperCase()}
+                  {link.name}
                 </StyledHeaderLink>
               </li>
             ))}
             <li                 style={{
+              paddingTop: "1rem",
                   paddingLeft: "1rem",
                   paddingRight: "2rem",
                 }}>

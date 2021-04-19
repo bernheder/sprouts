@@ -14,11 +14,16 @@ interface Props {
 
 export default function IndexPage({ data }: Props) {
   return (
-    <div style={{          backgroundColor: "ghostwhite"
+    <div style={{          backgroundColor: "snow"
   }}>
     <Layout>
       <SEO title="Home" />
       <Home/>
+      <div id="products" style={{          backgroundColor: "snow",
+      marginTop: "3rem",
+      textAlign: "center"
+  }}>
+    <h1>Produkte</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <ProductPreview
           productName={node?.frontmatter?.productName}
@@ -27,11 +32,8 @@ export default function IndexPage({ data }: Props) {
           slug={node?.fields?.slug}
         />
       ))}
-
-      <p>
-        <Link to="/abut-us/">about-us</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-      </p>
+      
+      </div>
     </Layout>
     </div>
   )

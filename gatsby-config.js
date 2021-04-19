@@ -5,11 +5,13 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks: [
       {
-        name:'home',
-        link:'/'
-      },
+        name:'Über uns',
+        link:'/#products'
+      }
+    ],
+    footerLinks: [
       {
-        name:'Wir',
+        name:'Über uns',
         link:'/about-us'
       }
     ]
@@ -59,6 +61,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+            },
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

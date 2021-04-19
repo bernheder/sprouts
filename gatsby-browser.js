@@ -3,5 +3,5 @@
  *
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
-
+import './src/components/layout.css'
 // You can delete this file if you're not using it

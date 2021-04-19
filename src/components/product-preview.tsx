@@ -15,7 +15,7 @@ text-decoration: none;
 color: white
 &:hover {
   text-decoration: none;
-  color: black;
+  color: cadetblue;
 }
 }
 `;
