@@ -99,7 +99,6 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
                   paddingLeft: "1rem",
                   paddingRight: "2rem",
                 }}>
-            <DropDownButton buttonTitle={"Produkte"} menuLinks={products}/>
             </li>
           </ul>
         </nav>

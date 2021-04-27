@@ -1,46 +1,76 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { ProductsQuery } from "../../gatsby-graphql"
+import { DataStuffQuery } from "../../gatsby-graphql"
 import SEO from "../components/seo"
 import ProductPreview from "../components/product-preview"
+import ArticlePreview from "../components/article-preview"
 import Home from "../components/home"
 
 interface Props {
-  data: ProductsQuery
+  data: DataStuffQuery
 }
 
 export default function IndexPage({ data }: Props) {
   return (
-    <div style={{          backgroundColor: "snow"
-  }}>
-    <Layout>
-      <SEO title="Home" />
-      <Home/>
-      <div id="products" style={{          backgroundColor: "snow",
-      marginTop: "3rem",
-      textAlign: "center"
-  }}>
-    <h1>Produkte</h1>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <ProductPreview
-          productName={node?.frontmatter?.productName}
-          imageFluid={node?.frontmatter?.imageSource}
-          excerpt={node?.excerpt}
-          slug={node?.fields?.slug}
-        />
-      ))}
-      
-      </div>
-    </Layout>
+    <div style={{ backgroundColor: "snow" }}>
+      <Layout>
+        <SEO title="Home" />
+        <Home />
+        <div
+          id="products"
+          style={{
+            backgroundColor: "snow",
+            marginTop: "3rem",
+            textAlign: "center",
+          }}
+        >
+          <h1>Produkte</h1>
+          {data.products.edges.map(({ node }) => (
+            <ProductPreview
+              productName={node?.frontmatter?.productName}
+              imageFluid={node?.frontmatter?.imageSource}
+              excerpt={node?.excerpt}
+              slug={node?.fields?.slug}
+            />
+          ))}
+        </div>
+        <div
+          id="articles"
+          style={{
+            backgroundColor: "snow",
+            marginTop: "3rem",
+            textAlign: "center",
+          }}
+        >
+          <h1>Artikel</h1>
+          </div>
+          <div
+          id="articles"
+          style={{
+            backgroundColor: "WhiteSmoke",
+            marginTop: "3rem",
+            maxWidth: "900px",
+            margin: "auto",
+          }}
+        >
+          {data.articles.edges.map(({ node }) => (
+            <ArticlePreview
+              articleName={node?.frontmatter?.articleName}
+              excerpt={node?.excerpt}
+              slug={node?.fields?.slug}
+            />
+          ))}
+        </div>
+      </Layout>
     </div>
   )
 }
-export const productsQuery = graphql`
-  query Products {
-    allMarkdownRemark(filter: { fields: { slug: { regex: "/products/" } } }) {
+export const data = graphql`
+  query dataStuff {
+    products: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/products/" } } }
+    ) {
       edges {
         node {
           fields {
@@ -51,12 +81,27 @@ export const productsQuery = graphql`
             imageSource {
               childImageSharp {
                 gatsbyImageData(
-          width: 200
-          placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF, PNG]
-        )
+                  width: 200
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF, PNG]
+                )
               }
             }
+          }
+          excerpt
+        }
+      }
+    }
+    articles: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "/articles/" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            articleName
           }
           excerpt
         }

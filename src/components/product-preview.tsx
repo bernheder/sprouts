@@ -29,34 +29,18 @@ export default function ProductPreview({
   if (image && productName) {
     return (
       <div        style={{
+        display: "flex",
+        backgroundColor: "white",
         justifyContent: "center",
+        padding: "2rem",
         margin: "auto",
-
+        marginTop: "2rem",
         maxWidth: "900px"
 
       }}>
       <StyledProductLink to={slug || ""} className="a">
-      <div
-        style={{
-          display: "flex",
-          backgroundColor: "white",
-          flex:"1",
-          justifyContent: "center",
-          padding: "2rem",
-          margin: "auto",
-          marginTop: "2rem",
-          maxWidth: "900px"
-
-        }}
-      >
-        <div>
-          <GatsbyImage image={image} alt={productName} />
-        </div>
-        <div style={{ marginLeft: "2rem" }}>
           <h2>{productName}</h2>
           <p>{excerpt}</p>
-        </div>
-      </div>
       </StyledProductLink>
       </div>
     )

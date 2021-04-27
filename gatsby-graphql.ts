@@ -260,6 +260,8 @@ export type Site = Node & {
   siteMetadata?: Maybe<SiteSiteMetadata>;
   port?: Maybe<Scalars['Int']>;
   host?: Maybe<Scalars['String']>;
+  polyfill?: Maybe<Scalars['Boolean']>;
+  pathPrefix?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -635,6 +637,7 @@ export type MarkdownRemarkTableOfContentsArgs = {
 
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
+  articleName?: Maybe<Scalars['String']>;
   productName?: Maybe<Scalars['String']>;
   imageSource?: Maybe<File>;
 };
@@ -1006,6 +1009,8 @@ export type QuerySiteArgs = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
+  polyfill?: Maybe<BooleanQueryOperatorInput>;
+  pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -1349,6 +1354,7 @@ export type MarkdownRemarkFilterInput = {
 
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
+  articleName?: Maybe<StringQueryOperatorInput>;
   productName?: Maybe<StringQueryOperatorInput>;
   imageSource?: Maybe<FileFilterInput>;
 };
@@ -1634,6 +1640,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark'
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
+  | 'childrenMarkdownRemark___frontmatter___articleName'
   | 'childrenMarkdownRemark___frontmatter___productName'
   | 'childrenMarkdownRemark___frontmatter___imageSource___sourceInstanceName'
   | 'childrenMarkdownRemark___frontmatter___imageSource___absolutePath'
@@ -1728,6 +1735,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___internal___type'
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
+  | 'childMarkdownRemark___frontmatter___articleName'
   | 'childMarkdownRemark___frontmatter___productName'
   | 'childMarkdownRemark___frontmatter___imageSource___sourceInstanceName'
   | 'childMarkdownRemark___frontmatter___imageSource___absolutePath'
@@ -2193,6 +2201,8 @@ export type SiteFieldsEnum =
   | 'siteMetadata___footerLinks___link'
   | 'port'
   | 'host'
+  | 'polyfill'
+  | 'pathPrefix'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -2294,6 +2304,8 @@ export type SiteFilterInput = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
+  polyfill?: Maybe<BooleanQueryOperatorInput>;
+  pathPrefix?: Maybe<StringQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2894,6 +2906,7 @@ export type MarkdownRemarkEdge = {
 export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
+  | 'frontmatter___articleName'
   | 'frontmatter___productName'
   | 'frontmatter___imageSource___sourceInstanceName'
   | 'frontmatter___imageSource___absolutePath'
@@ -3657,15 +3670,18 @@ export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 export type Unnamed_1_Query = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
 
-export type ProductsQueryVariables = Exact<{ [key: string]: never; }>;
+export type DataStuffQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ProductsQuery = { allMarkdownRemark: { edges: Array<{ node: (
+export type DataStuffQuery = { products: { edges: Array<{ node: (
         Pick<MarkdownRemark, 'excerpt'>
         & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<(
           Pick<MarkdownRemarkFrontmatter, 'productName'>
           & { imageSource?: Maybe<{ childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
         )> }
+      ) }> }, articles: { edges: Array<{ node: (
+        Pick<MarkdownRemark, 'excerpt'>
+        & { fields?: Maybe<Pick<MarkdownRemarkFields, 'slug'>>, frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'articleName'>> }
       ) }> } };
 
 export type FullProductQueryVariables = Exact<{

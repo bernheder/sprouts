@@ -5,8 +5,16 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks: [
       {
-        name:'Über uns',
+        name:'Produkte',
         link:'/#products'
+      },
+      {
+        name:'Artikel',
+        link:'/#articles'
+      },
+      {
+        name:'Über uns',
+        link:'/about-us'
       }
     ],
     footerLinks: [
