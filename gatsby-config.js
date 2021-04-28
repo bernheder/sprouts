@@ -19,8 +19,8 @@ module.exports = {
     ],
     footerLinks: [
       {
-        name:'Über uns',
-        link:'/about-us'
+        name:'Impressum',
+        link:'/impressum'
       }
     ]
   },

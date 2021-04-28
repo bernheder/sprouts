@@ -35,7 +35,7 @@ const Footer = ({ menuLinks }: FooterProps) => {
         margin: "auto",
         background: `darkseagreen`,
         maxWidth: "1200px"}}>
-          <ul style={{height: '3rem', display: "flex", flex: 1 ,background: `darkseagreen`}}>
+          <ul style={{height: '3rem', margin: "auto", display: "flex", flex: 1 ,background: `darkseagreen`,  justifyContent: "center",}}>
             {menuLinks.map(link => (
               <li
                 key={link.name}
