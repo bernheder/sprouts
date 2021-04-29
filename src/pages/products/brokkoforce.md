@@ -1,11 +1,10 @@
 ---
 productName: "BROKKO FORCE"
-imageSource: "../../images/brokkoforce.jpeg"
+imageSource: "../../images/gatsby-astronaut.png"
 ---
 
-## Ein außergewöhnliches Gesundheitsprodukt.
+## Ein außergewöhnliches Gesundheitsprodukt
 
-<div style="text-align: justify">
 Brokkoli ist der Spitzenreiter, der Star unter den Kohlgemüsen. Aufgrund seines besonders hohen Wirkstoffgehalts, wurden hier auch die meisten Studien gemacht.
 Brokko Force ist eine ideale Keimlingsmischung mit Brokkoli und Daikonrettich, die das Riesenpotenzial der Kohlgemüse auf den Punkt bringt.
 Es wird nicht pulverisiert und nicht verkapselt, sondern wird teelöffelweise eingenommen.
@@ -21,15 +20,8 @@ Der gängige Herstellungsprozess von Brokkoli Produkten kann dazu führen, dass 
 Zusätzlich deaktivieren wir einen Gegenspieler, einen **Enzym Kofaktor**
 ( Epithiospecifier Protein), der die Umwandlung in Sulphoraphan behindert und  unerwünschte Stoffe (Sulphoraphan-Nitril und Epithio-Nitril)  produziert, die die Schilddrüse belasten. Wird dieser Kofaktor nicht deaktiviert, wird schlimmstenfalls gar kein oder nur relativ wenig Sulphoraphan gebildet, weil die Vorstufe –das Glucoraphanin – schon anderweitig von der Konkurrenz umgewandelt wurde. Wir haben dann vielleicht ein Produkt mit tatsächlich hohem sulphoraphanbildendem Ausgangsstoff (Glucoraphanin), es wird aber kein Sulphoraphan oder nur sehr wenig davon gebildet. Übrig bleibt ein wirkungsloses Produkt mit möglicherweise schädlicher Wirkung.
 
-Unsere  naturnahen, speziellen Produktionsmethoden hingegen, führen  zu einem hochwirksamen Produkt.  
+Unsere  naturnahen, speziellen Produktionsmethoden hingegen, führen  zu einem hochwirksamen Produkt.
 
-
-
-
-
-  
-    
-      
 
 ## Zutaten
 ### Geballte Kraft aus Keimlingen
@@ -38,16 +30,14 @@ Unser Erstprodukt ist seit 2017 erhältlich und wurde vor allem von Therapeuten 
 BROKKOLI-KEIMLINGE mit DAIKONRETTICH-KEIMLINGEN
 Ein Bio Produkt, glutenfrei, vegan,  in Rohkostqualität.
 
-Zutaten:   
-Brokkolikeimlinge  90 g,   
-Daikonrettichkeimlinge  10 g  
-Füllmenge….Inhalt  100g  
+Zutaten 
+Brokkolikeimlinge  90 g, 
+Daikonrettichkeimlinge  10 g
+Füllmenge….Inhalt  100g
+Verzehrempfehlung:  
+1 mal täglich 1 Teelöffel (ca. 3 g) gut zerkauen und mit etwas Wasser einnehmen.
 
 
-Verzehrempfehlung:    
-1 mal täglich 1 Teelöffel (ca. 3 g) gut zerkauen  und mit etwas Wasser einnehmen.
-
-</div>
 
 | **Nährwertangaben:  / 100g** |             |
 | :--------------------------- | :---------: |
@@ -60,5 +50,3 @@ Verzehrempfehlung:
 | Salz                         | unter 0,1 g |
 
 
-
-![Brokko force Etikett](../../images/force_etikett.jpg)
