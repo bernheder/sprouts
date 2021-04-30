@@ -17,10 +17,11 @@ export default function BlogPost({ data }: article) {
         style={{
           display: "flex",
           justifyContent: "center",
+          padding: "1rem",
         }}
       >
         
-        <h2 style={{display: "block", paddingTop: "2rem"}}>{article?.frontmatter?.articleName}</h2>
+        <h2 style={{display: "block", margin: "auto", }}>{article?.frontmatter?.articleName}</h2>
         </div>
         <div
         style={{
