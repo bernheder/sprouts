@@ -1,7 +1,7 @@
 import * as React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
+import { StaticImage } from "gatsby-plugin-image"
 
 interface ProductPreviewProps {
   excerpt: string | null | undefined

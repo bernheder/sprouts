@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import ProductPreview from "../components/product-preview"
 import ArticlePreview from "../components/article-preview"
 import Home from "../components/home"
+import { StaticImage } from "gatsby-plugin-image"
 
 interface Props {
   data: DataStuffQuery
@@ -59,6 +60,24 @@ export default function IndexPage({ data }: Props) {
             />
           ))}
         </div>
+        <div      style={{
+justifyContent: "center",
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "flex",
+        flex: "1",
+        marginTop: "3rem"
+
+
+
+      }}>                  <StaticImage
+          src="../images/bio_label.jpg"
+          width={200}
+          quality={95}
+          formats={["auto", "webp", "avif", "png"]}
+          alt="A Gatsby astronaut"
+          
+        /></div>
       </Layout>
     </div>
   )

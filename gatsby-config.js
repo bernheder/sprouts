@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Green Power Sprouts`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Keimlinge – so klein und soo bedeutend. Wir beschäftigen uns mit der Erforschung und Entwicklung von  hochwirksamen Naturheilmitteln.`,
     author: `@gatsbyjs`,
     menuLinks: [
       {

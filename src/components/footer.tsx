@@ -48,7 +48,7 @@ const Footer = ({ menuLinks }: FooterProps) => {
                 }}
               >
                 <StyledHeaderLink to={link.link}>
-                  {link.name}
+                  {link.name} 
                 </StyledHeaderLink>
               </li>
             ))}
