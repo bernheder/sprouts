@@ -2,7 +2,6 @@
 articleName: "EXTRAKTE ODER DIE GANZE PFLANZE"
 ---
 
-## EXTRAKTE ODER DIE GANZE PFLANZE
 
 Brokkoli ist bekanntlich sehr gesund und viele Studien (z.B. Uni Heidelberg) attestieren eine breite Heilwirkung, vor allem bei Krebs, Gastritis, Reflux, Herz-Kreislauf Erkrankungen, Diabetes, Demenz, Entzündungen u.v.m.
 Für eine therapeutisch wirksame Dosis müsste man allerdings fast 1 Kg des Gemüses täglich essen und das möglichst im Rohzustand, da beim Erhitzen viele Wirkstoffe degradiert werden, vor allem das Enzym Myrosinase. Ohne Myrosinase - kein Sulphoraphan.

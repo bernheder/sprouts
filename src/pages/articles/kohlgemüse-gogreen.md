@@ -1,10 +1,9 @@
 ---
-articleName: "KOHLGEMÜSE- GO GREEN"
+articleName: "KOHLGEMÜSE- GO GREEN!"
 ---
 
-## KOHLGEMÜSE- GO GREEN
 
-GO GREEN- Vom gesunden Gemüse zum Superfood
+Vom gesunden Gemüse zum Superfood
 
 Dass Brokkoli, Rosenkohl und Co. gesund sind, ist schon sehr lange bekannt.
 Ihre außergewöhnliche gesundheitliche Wirksamkeit aber wurde erst durch zahlreiche  Studien wissenschaftlich belegt.

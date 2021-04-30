@@ -18,35 +18,32 @@ export default function IndexPage({ data }: Props) {
         <SEO title="Home" />
         <Home />
         <div
-          id="products"
           style={{
             backgroundColor: "snow",
             marginTop: "3rem",
             textAlign: "center",
           }}
         >
-          <h1>Produkte</h1>
+          <h1 id="products">Produkte</h1>
           {data.products.edges.map(({ node }) => (
             <ProductPreview
               productName={node?.frontmatter?.productName}
-              imageFluid={node?.frontmatter?.imageSource}
               excerpt={node?.excerpt}
               slug={node?.fields?.slug}
             />
           ))}
         </div>
         <div
-          id="articles"
           style={{
             backgroundColor: "snow",
             marginTop: "3rem",
             textAlign: "center",
           }}
         >
-          <h1>Artikel</h1>
+          
+          <h1 id="articles">Artikel</h1>
           </div>
           <div
-          id="articles"
           style={{
             backgroundColor: "WhiteSmoke",
             marginTop: "3rem",

@@ -26,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
   `)
 
   return (
-<div style={{
+<div id="layout" style={{
 }}>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />      
         <main    

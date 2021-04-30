@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 interface ProductPreviewProps {
-  imageFluid: any
   excerpt: string | null | undefined
   productName: string | null | undefined
   slug: string |null| undefined
@@ -20,13 +19,11 @@ color: white
 }
 `;
 export default function ProductPreview({
-  imageFluid,
   excerpt,
   productName,
   slug
 }: ProductPreviewProps) {
-  const image = getImage(imageFluid)
-  if (image && productName) {
+  if (productName) {
     return (
       <div        style={{
         display: "flex",

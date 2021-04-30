@@ -26,13 +26,13 @@ export default function ArticlePreview({
     return (
       <div        style={{
         margin: "auto",
-        padding: "2rem",
+        padding: "1rem",
         maxWidth: "900px"
 
       }}>
       <StyledArticleLink to={slug || ""} className="a">
         <div style={{ marginLeft: "2rem" }}>
-          <h2>{articleName}</h2>
+        <b><p>{articleName}</p></b>
           <p>{excerpt}</p>
         </div>
       </StyledArticleLink>

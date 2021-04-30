@@ -3,7 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home() {
   return (
-    <div
+    
+    <div id="home"
       style={{
         width: "100%",
         display: "flex",
@@ -20,6 +21,23 @@ export default function Home() {
         <div style={{
           width:700
         }}>
+        <div      style={{
+justifyContent: "center",
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "flex",
+        flex: "1",
+
+
+
+      }}>                  <StaticImage
+          src="../images/home.png"
+          width={200}
+          quality={95}
+          formats={["auto", "webp", "avif", "png"]}
+          alt="A Gatsby astronaut"
+          
+        /></div>
         <h1>Keimlinge – so klein und soo bedeutend</h1>
         <p style={{
           textAlign:"justify"
@@ -31,16 +49,6 @@ export default function Home() {
           Natur beschäftigt.
         </p>
         </div>
-        <div>
-        <StaticImage
-          src="../images/home.png"
-          width={200}
-          quality={95}
-          formats={["auto", "webp", "avif", "png"]}
-          alt="A Gatsby astronaut"
-        />
-        </div>
       </div>
-    
   )
 }

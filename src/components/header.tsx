@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link as HeaderLink } from "gatsby"
 import styled from "@emotion/styled"
 import { StaticImage } from "gatsby-plugin-image"
+import Sidebar from "./sidebar";
 const StyledHeaderLink = styled(HeaderLink)`
   color: white;
   text-decoration: none;
@@ -19,6 +20,7 @@ interface HeaderProps {
 const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
   return (
     <header
+    id="header"
       style={{
         background: `darkseagreen`,
         height: "2.5rem",
@@ -55,7 +57,6 @@ const Header = ({ siteTitle, menuLinks }: HeaderProps) => {
                 </StyledHeaderLink>
               </li>
             ))}
-
           </ul>
         </nav>
       </div>

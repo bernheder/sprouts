@@ -1,8 +1,7 @@
 ---
-articleName: "BROKIMMUN"
+productName: "BROKIMMUN"
 ---
 
-## BROKIMMUN
 
 Brokimmun ist nicht nur hochwirksam gegen Viren und andere Eindringlinge, sondern hat zusätzlich die so wichtige Fähigkeit zur Immunmodulation und kann so Überreaktionen des Immunsystems – sogenannte Zytokinstürme – verhindern.
 Mittlerweile ist auch bekannt, dass die besonders schweren Covid-19 Fälle

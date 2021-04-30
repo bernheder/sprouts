@@ -15,9 +15,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
+  const resultProducts = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "/products/" } } }) {
         edges {
           node {
             fields {
@@ -28,11 +28,56 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const resultArticles = await graphql(`
+    query {
+      allMarkdownRemark(filter: { fields: { slug: { regex: "/articles/" } } }) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  const other = await graphql(`
+    query {
+      allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/(about-us|impressum|datenschutzhinweis)/" } } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  other.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/product.tsx`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+  resultProducts.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/product.tsx`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+  resultArticles.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/article.tsx`),
       context: {
         slug: node.fields.slug,
       },

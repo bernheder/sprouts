@@ -2,7 +2,6 @@
 articleName: "STUDIEN"
 ---
 
-## STUDIEN 
 
 Über 650 wissenschaftliche Studien zeigen die außergewöhnlichen Eigenschaften und Heilwirkungen des Brokkolis. 
 Verantwortlich dafür sind in erster Linie  seine sekundären Pflanzenstoffe, dabei vor allem das Sulphoraphan, das aus dem Glucosinolat Glucoraphanin mit Hilfe von Enzymen entsteht.
