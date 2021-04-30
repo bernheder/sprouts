@@ -2,7 +2,7 @@
 productName: "BROKKO FORCE"
 imageSource: "../../images/gatsby-astronaut.png"
 ---
-
+![Etikett](../../images/force_etikett.jpg)
 ## Ein außergewöhnliches Gesundheitsprodukt
 Brokkoli ist der Spitzenreiter, der Star unter den Kohlgemüsen. Aufgrund seines besonders hohen Wirkstoffgehalts, wurden hier auch die meisten Studien gemacht.
 Brokko Force ist eine ideale Keimlingsmischung mit Brokkoli und Daikonrettich, die das Riesenpotenzial der Kohlgemüse auf den Punkt bringt.

@@ -1,5 +1,5 @@
 ---
-articleName: "BROKKOLI und DAIKON RETTICH für die Gesundheit"
+articleName: "BROKKOLI UND DAIKON RETTICH FÜR DIE GESUNDHEIT"
 ---
 
 
