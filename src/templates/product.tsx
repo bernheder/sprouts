@@ -17,10 +17,11 @@ export default function BlogPost({ data }: Product) {
         style={{
           display: "flex",
           justifyContent: "center",
+          marginTop: "2rem"
         }}
       >
         
-        <h1 style={{display: "block"}}>{product?.frontmatter?.productName}</h1>
+        <h1 style={{display: "block", marginTop: "2rem"}}>{product?.frontmatter?.productName}</h1>
         </div>
         <div
         style={{

@@ -42,7 +42,7 @@ export default function IndexPage({ data }: Props) {
           }}
         >
           
-          <h1 id="articles">Artikel</h1>
+          <h1 id="articles">Info</h1>
           </div>
           <div
           style={{
@@ -72,7 +72,7 @@ justifyContent: "center",
 
       }}>                  <StaticImage
           src="../images/bio_label.jpg"
-          width={200}
+          width={100}
           quality={95}
           formats={["auto", "webp", "avif", "png"]}
           alt="A Gatsby astronaut"

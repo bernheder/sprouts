@@ -4,7 +4,6 @@ imageSource: "../../images/gatsby-astronaut.png"
 ---
 
 ## Ein außergewöhnliches Gesundheitsprodukt
-<div style="text-align: justify">
 Brokkoli ist der Spitzenreiter, der Star unter den Kohlgemüsen. Aufgrund seines besonders hohen Wirkstoffgehalts, wurden hier auch die meisten Studien gemacht.
 Brokko Force ist eine ideale Keimlingsmischung mit Brokkoli und Daikonrettich, die das Riesenpotenzial der Kohlgemüse auf den Punkt bringt.
 Es wird nicht pulverisiert und nicht verkapselt, sondern wird teelöffelweise eingenommen.
@@ -30,7 +29,6 @@ Unser Erstprodukt ist seit 2017 erhältlich und wurde vor allem von Therapeuten 
 BROKKOLI-KEIMLINGE mit DAIKONRETTICH-KEIMLINGEN
 Ein Bio Produkt, glutenfrei, vegan,  in Rohkostqualität.
 
-</div>
 Zutaten 
 Brokkolikeimlinge  90 g, 
 Daikonrettichkeimlinge  10 g

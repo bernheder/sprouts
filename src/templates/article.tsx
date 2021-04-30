@@ -21,7 +21,7 @@ export default function BlogPost({ data }: article) {
         }}
       >
         
-        <h2 style={{display: "block", margin: "auto", }}>{article?.frontmatter?.articleName}</h2>
+        <h2 style={{display: "block", margin: "auto",textAlign:"center" }}>{article?.frontmatter?.articleName}</h2>
         </div>
         <div
         style={{

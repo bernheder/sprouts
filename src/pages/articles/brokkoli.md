@@ -36,4 +36,4 @@ Aus der Volksmedizin ist lange bekannt, dass Rettich besonders die  Lunge und di
 Synergieeffekte sind auf Grund der komplexen Wirkstoffzusammensetzungen in Pflanzen nur wenig erforscht, werden aber in der Praxis immer wieder bestätigt. 
 Synergie besteht aber nicht nur innerhalb einer Pflanze, sondern durch die Wahl der passenden Partner, können Wirkungen noch weiter erhöht werden. Dabei reichen oft kleinste Mengen um so einen Effekt zu erreichen.
 
-## Ein guter Grund um unser Brokkoliprodukt mit Daikon aufzuwerten.
+**Ein guter Grund um unser Brokkoliprodukt mit Daikon aufzuwerten.**

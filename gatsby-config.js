@@ -9,7 +9,7 @@ module.exports = {
         link:'/#products'
       },
       {
-        name:'Artikel',
+        name:'Info',
         link:'/#articles'
       },
       {

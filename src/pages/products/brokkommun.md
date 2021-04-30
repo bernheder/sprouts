@@ -9,13 +9,13 @@ nicht in erster Linie durch den Virus ausgelöst werden, sondern letztlich durch
 
 Durch die Wahl der passenden Synergiepartner mit ihren speziellen Wirkstoffen erhalten wir nicht nur einen  Super Immun Booster, sondern ein Mittel, das das  komplette Infektionsgeschehen im Griff hat.
 
-Folgende Zutaten haben sich in ihrem Zusammenwirken als besonders wirkungsvoll erwiesen:
+Folgende Zutaten haben sich in ihrem Zusammenwirken als besonders wirkungsvoll erwiesen:  
 
-Brokkoli Keimlinge
-Daikonrettich Keimlinge
-Holunderbeeren
-Hibiskus
-Schwarze Johannisbeeren
+Brokkoli Keimlinge  
+Daikonrettich Keimlinge  
+Holunderbeeren  
+Hibiskus  
+Schwarze Johannisbeeren  
 
 Brokkoli in Kombination mit Daikonrettich hat sich besonders gut bewährt, um den Wirkstoff Sulphoraphan bioverfügbar zu machen, der laut Studien antioxidativ, entgiftend, entzündungshemmend,immunstärkend, und krebshemmend wirkt, um nur einige der positiven Wirkungen zu nennen.
 

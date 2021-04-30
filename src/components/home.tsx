@@ -8,10 +8,10 @@ export default function Home() {
       style={{
         width: "100%",
         display: "flex",
-        backgroundColor: "white",
+        backgroundColor: "snow",
         flex: "1",
         margin: "auto",
-        marginTop: "-2rem",
+        marginTop: "-1rem",
         padding: "3rem",
         justifyContent: "center",
       }}
@@ -38,9 +38,9 @@ justifyContent: "center",
           alt="A Gatsby astronaut"
           
         /></div>
-        <h1>Keimlinge – so klein und soo bedeutend</h1>
+        <h1 style={{textAlign:"center",marginTop: "1rem"}}>Keimlinge – so klein und soo bedeutend</h1>
         <p style={{
-          textAlign:"justify"
+          textAlign:"center"
         }}>
           Wir beschäftigen uns mit der Erforschung und Entwicklung von
           hochwirksamen Naturheilmitteln. Da der Wirkstoffgehalt in Pflanzen bei
