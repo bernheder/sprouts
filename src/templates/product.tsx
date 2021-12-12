@@ -17,7 +17,7 @@ export default function BlogPost({ data }: Product) {
         style={{
           display: "flex",
           justifyContent: "center",
-          marginTop: "2rem"
+          marginTop: "1rem"
         }}
       >
         
@@ -29,7 +29,7 @@ export default function BlogPost({ data }: Product) {
           backgroundColor: "white",
           flex:"1",
           justifyContent: "center",
-          padding: "2rem",
+          padding: "1rem",
           margin: "auto",
           maxWidth: "800px"
         }}

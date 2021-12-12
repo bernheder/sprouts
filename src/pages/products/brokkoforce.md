@@ -2,7 +2,15 @@
 productName: "BROKKO FORCE"
 imageSource: "../../images/gatsby-astronaut.png"
 ---
-![Etikett](../../images/force_etikett.jpg)
+![Produkt](../../images/force_product.jpg)
+
+### Geballte Kraft aus Keimlingen
+
+Unser Erstprodukt ist seit 2017 erhältlich und wurde vor allem von Therapeuten weiterempfohlen. Es hat seine Feuerprobe bei den Patienten mit Bravour bestanden  – weil es wirkt.
+BROKKOLI-KEIMLINGE mit DAIKONRETTICH-KEIMLINGEN
+Ein Bio Produkt, glutenfrei, vegan,  in Rohkostqualität.
+
+
 ## Ein außergewöhnliches Gesundheitsprodukt
 Brokkoli ist der Spitzenreiter, der Star unter den Kohlgemüsen. Aufgrund seines besonders hohen Wirkstoffgehalts, wurden hier auch die meisten Studien gemacht.
 Brokko Force ist eine ideale Keimlingsmischung mit Brokkoli und Daikonrettich, die das Riesenpotenzial der Kohlgemüse auf den Punkt bringt.
@@ -13,7 +21,7 @@ Hier spielen nicht einzelne Instrumente, sondern das ganze Orchester.
 
 Wir haben Methoden entwickelt,  gekeimtes Saatgut auf natürliche Art und Weise noch weiter  zu optimieren. Dadurch entwickelt der Keimling  noch höhere Mengen an Wirkstoffen. So erreichen wir einen hohen Gehalt an Vitaminen, Mineralstoffen und vor allem an dem Glucosinolat Glucoraphanin, das beim Verzehr mit Hilfe von Enzymen, in den begehrten Wirkstoff Sulphoraphan umgewandelt wird.
 
-Wir fügen 10% Daikonrettich Keimlinge hinzu,  ein hochpotenter Enzym- spender (Myrosinase), was eine sehr gute **Umwandlung**  der Vorstufe  Glucoraphanin in  den erwünschten Wirkstoff Sulphoraphan  garantiert. 
+Wir fügen 10% Daikonrettich Keimlinge hinzu,  ein hochpotenter Enzymspender (Myrosinase), was eine sehr gute **Umwandlung**  der Vorstufe  Glucoraphanin in  den erwünschten Wirkstoff Sulphoraphan  garantiert. 
 Der gängige Herstellungsprozess von Brokkoli Produkten kann dazu führen, dass das Enzym Myrosinase, das zwar auch im Brokkoli enthalten ist, teilweise oder ganz deaktiviert wird. Besonders bei Brokkoli Produkten kommt es nicht nur darauf an, was drin ist, sondern was im Körper, in der Zelle, ankommt. Das kann durch die Metaboliten im Urin gemessen werden.
 
 Zusätzlich deaktivieren wir einen Gegenspieler, einen **Enzym Kofaktor**
@@ -23,11 +31,6 @@ Unsere  naturnahen, speziellen Produktionsmethoden hingegen, führen  zu einem h
 
 
 ## Zutaten
-### Geballte Kraft aus Keimlingen
-
-Unser Erstprodukt ist seit 2017 erhältlich und wurde vor allem von Therapeuten weiterempfohlen. Es hat seine Feuerprobe bei den Patienten mit Bravour bestanden  – weil es wirkt.
-BROKKOLI-KEIMLINGE mit DAIKONRETTICH-KEIMLINGEN
-Ein Bio Produkt, glutenfrei, vegan,  in Rohkostqualität.
 
 Zutaten 
 Brokkolikeimlinge  90 g, 
@@ -49,3 +52,4 @@ Verzehrempfehlung:
 | Salz                         | unter 0,1 g |
 
 
+![Etikett](../../images/force_etikett.jpg)

@@ -32,10 +32,11 @@ justifyContent: "center",
 
       }}>                  <StaticImage
           src="../images/home.png"
-          width={200}
+          width={320}
+          height={500}
           quality={95}
           formats={["auto", "webp", "avif", "png"]}
-          alt="A Gatsby astronaut"
+          alt="Green Power Sprouts"
           
         /></div>
         <h1 style={{textAlign:"center",marginTop: "1rem"}}>Keimlinge – so klein und soo bedeutend</h1>

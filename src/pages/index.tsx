@@ -75,7 +75,7 @@ justifyContent: "center",
           width={100}
           quality={95}
           formats={["auto", "webp", "avif", "png"]}
-          alt="A Gatsby astronaut"
+          alt="bio label"
           
         /></div>
       </Layout>

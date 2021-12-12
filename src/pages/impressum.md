@@ -14,4 +14,4 @@
 
 
 
-Geschäftsführer: Raphael Aberer und Ingo Broeg
+Inhaber: Raphael Aberer
