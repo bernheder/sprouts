@@ -4,7 +4,7 @@ imageSource: "../../images/gatsby-astronaut.png"
 ---
 ![Produkt](../../images/force_product.jpg)
 
-### Geballte Kraft aus Keimlingen
+## Geballte Kraft aus Keimlingen
 
 Unser Erstprodukt ist seit 2017 erhältlich und wurde vor allem von Therapeuten weiterempfohlen. Es hat seine Feuerprobe bei den Patienten mit Bravour bestanden  – weil es wirkt.
 BROKKOLI-KEIMLINGE mit DAIKONRETTICH-KEIMLINGEN
