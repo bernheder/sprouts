@@ -51,5 +51,3 @@ Verzehrempfehlung:
 | Zucker                       |   4,15 g    |
 | Salz                         | unter 0,1 g |
 
-
-![Etikett](../../images/force_etikett.jpg)
