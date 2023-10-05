@@ -42,15 +42,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-graphql-codegen`,
-      options: {
-        fileName: `./gatsby-graphql.ts`,
-        documentPaths: [
-          './src/**/*.{ts,tsx}',
-        ],
-      }
-    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -58,7 +49,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
- 
+
 
     {
       resolve: `gatsby-plugin-manifest`,
