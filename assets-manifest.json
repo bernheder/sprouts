@@ -10,15 +10,15 @@
   "app-4032e9775d9a56aa9103.js.map": "app-4032e9775d9a56aa9103.js.map",
   "app-6e75582b72388624106f.js.LICENSE.txt": "app-6e75582b72388624106f.js.LICENSE.txt",
   "app-6e75582b72388624106f.js.map": "app-6e75582b72388624106f.js.map",
-  "app.js": "app-4032e9775d9a56aa9103.js",
+  "app.js": "app-6e75582b72388624106f.js",
   "commons-1a19d0c09ee464f77f39.js.map": "commons-1a19d0c09ee464f77f39.js.map",
   "commons-c2d94bdb2862c32f870d.js.map": "commons-c2d94bdb2862c32f870d.js.map",
-  "commons.js": "commons-1a19d0c09ee464f77f39.js",
+  "commons.js": "commons-c2d94bdb2862c32f870d.js",
   "component---src-pages-404-js-0561fee6c81b2dd36c2e.js.map": "component---src-pages-404-js-0561fee6c81b2dd36c2e.js.map",
   "component---src-pages-404-js.js": "component---src-pages-404-js-0561fee6c81b2dd36c2e.js",
   "component---src-pages-index-tsx-0c7451d74acde355badd.js.map": "component---src-pages-index-tsx-0c7451d74acde355badd.js.map",
   "component---src-pages-index-tsx-761e50eb632bb9feb394.js.map": "component---src-pages-index-tsx-761e50eb632bb9feb394.js.map",
-  "component---src-pages-index-tsx.js": "component---src-pages-index-tsx-0c7451d74acde355badd.js",
+  "component---src-pages-index-tsx.js": "component---src-pages-index-tsx-761e50eb632bb9feb394.js",
   "component---src-templates-article-tsx-407337fa5ee7f24a85a6.js.map": "component---src-templates-article-tsx-407337fa5ee7f24a85a6.js.map",
   "component---src-templates-article-tsx.js": "component---src-templates-article-tsx-407337fa5ee7f24a85a6.js",
   "component---src-templates-product-tsx-310f6f571014610bbbb3.js.map": "component---src-templates-product-tsx-310f6f571014610bbbb3.js.map",
@@ -29,5 +29,6 @@
   "styles.css": "styles.c1f18c1973b5a0eb5e68.css",
   "webpack-runtime-32020e5ab546815be50b.js.map": "webpack-runtime-32020e5ab546815be50b.js.map",
   "webpack-runtime-ba124429825f56f1ed64.js.map": "webpack-runtime-ba124429825f56f1ed64.js.map",
-  "webpack-runtime.js": "webpack-runtime-ba124429825f56f1ed64.js"
+  "webpack-runtime-fc74a63191cf029b6927.js.map": "webpack-runtime-fc74a63191cf029b6927.js.map",
+  "webpack-runtime.js": "webpack-runtime-fc74a63191cf029b6927.js"
 }
